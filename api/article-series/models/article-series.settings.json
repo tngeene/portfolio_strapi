@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "article_series",
+  "info": {
+    "name": "Article Series",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}
