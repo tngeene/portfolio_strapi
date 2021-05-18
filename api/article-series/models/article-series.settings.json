@@ -18,6 +18,21 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "cover_image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "summary": {
+      "type": "text"
     }
   }
 }
