@@ -3,17 +3,13 @@ FROM strapi/base
 WORKDIR /srv/app
 
 COPY ./package.json ./
-COPY ./package-lock.json ./
 
 RUN npm install
 
 COPY . .
 
-RUN mv env.txt .env
-
 # set to staging for that environment
 ENV NODE_ENV production 
-
 
 EXPOSE 1337
 
